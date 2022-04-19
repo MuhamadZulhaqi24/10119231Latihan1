@@ -1,0 +1,922 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    tools:context=".MainActivity"
+    tools:ignore="SpeakableTextPresentCheck">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/id_digiteam"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="343dp"
+            android:layout_height="95dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="24dp"
+            android:background="@color/green_50"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="23dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="24dp"
+                android:contentDescription="@string/name"
+                tools:ignore="ImageContrastCheck"
+                android:src="@drawable/logo1"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="17dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:lineSpacingExtra="3sp"
+                    android:text="@string/name"
+                    android:textColor="@color/black"
+                    android:translationY="-1.62sp"
+                    tools:text="DigiTeam" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/slogan"
+                    android:textColor="#616161"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/jabar_digi"
+                    android:textColor="#616161"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_profile"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="135dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/img_profile"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:contentDescription="@string/nama_user"
+                android:src="@drawable/profileorang"
+
+/>
+
+            <LinearLayout
+                android:id="@+id/profile"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nama_user"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bidang"
+                    android:textColor="@color/grey_75" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/workhour"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:id="@+id/frame1"
+                android:layout_width="343dp"
+                android:layout_height="230dp"
+                android:elevation="6dp"
+                android:background="@drawable/frame1"
+                android:layout_gravity="center"
+                tools:ignore="UselessParent">
+
+                <RelativeLayout
+                    android:id="@+id/frame1.1"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:id="@+id/jamkerja"
+                        android:layout_width="303dp"
+                        android:layout_height="30dp"
+                        android:layout_centerInParent="true"
+                        android:fontFeatureSettings="tnum, lnum"
+                        android:text="@string/jam_kerja_header"
+                        android:textColor="@color/black"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/frame1.2"
+                    android:layout_width="343dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="50dp">
+
+                    <TextView
+                        android:id="@+id/worktime"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="47dp"
+                        android:fontFeatureSettings="tnum, lnum"
+                        android:gravity="center_vertical"
+                        android:lineSpacingExtra="4sp"
+                        android:text="@string/jam_kerja_bulan_ini"
+                        android:textColor="#0D47A1"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/frame1.3"
+                    android:layout_width="0dp"
+                    android:layout_height="38dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/offerlayergolightgreen">
+
+                    <view
+                        android:id="@+id/view2"
+                        class="com.google.android.material.textfield.TextInputLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="80dp"
+                        android:layout_marginBottom="0dp"
+                        android:background="@drawable/offerlayergo" />
+
+                    <TextView
+                        android:id="@+id/waktukerja"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="10dp"
+                        android:fontFeatureSettings="pnum, lnum"
+                        android:gravity="center_vertical"
+                        android:lineSpacingExtra="5sp"
+                        android:text="@string/jam_kerja"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/img_jam"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="283dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="7dp"
+                        android:contentDescription="@string/jam_kerja_header"
+                        app:srcCompat="@drawable/img_jam"
+                        tools:ignore="" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/frame1.4"
+                    android:layout_width="343dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="138dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/minimum_kerja"
+                        android:layout_width="311dp"
+                        android:layout_height="19dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFeatureSettings="tnum, lnum"
+                        android:gravity="center_vertical"
+                        android:lineSpacingExtra="5sp"
+                        android:text="@string/jam_kerja_minimum"
+                        android:textColor="@color/grey_50"
+                        tools:ignore="TextContrastCheck" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/frame1.5"
+                    android:layout_width="343dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="0dp">
+
+                    <RelativeLayout
+                        android:id="@+id/frame1.5.1"
+                        android:layout_width="311dp"
+                        android:layout_height="38dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/offerlayergo"
+                        tools:ignore="UselessParent">
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/checkin"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/laporan_kotakkotak"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="480dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/april"
+                        android:textColor="#006430"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.646"
+                        app:layout_constraintStart_toEndOf="@+id/textView4"
+                        app:layout_constraintTop_toBottomOf="@id/laporan_header" />
+
+                    <TextView
+                        android:id="@+id/laporan_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="@string/l_kamu"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="@string/maret"
+                        android:textColor="#006430"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/laporan_header" />
+
+                    <androidx.gridlayout.widget.GridLayout
+                        android:id="@+id/grid_maret"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        app:columnCount="5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/textView4"
+                        app:rowCount="7">
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#70CD94" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#008444" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#008444" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#008444" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#008444" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#008444" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#1FB767" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#70CD94" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#70CD94" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#008444" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#008444" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#008444" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#C3E9D0" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#008444" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#C3E9D0" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#008444" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#1FB767" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#C3E9D0" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#9BDBB3" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#16A75C" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#9BDBB3" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#9BDBB3" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#9BDBB3" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#16A75C" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#16A75C" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#008444" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#16A75C" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#16A75C" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#16A75C" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#9BDBB3" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#9BDBB3" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#F5F5F5" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#F5F5F5" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#F5F5F5" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#F5F5F5" />
+
+
+                    </androidx.gridlayout.widget.GridLayout>
+
+                    <androidx.gridlayout.widget.GridLayout
+                        android:id="@+id/grid_april"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:columnCount="5"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/textView5"
+                        app:rowCount="7">
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#16A75C" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#069550" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#069550" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#70CD94" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#70CD94" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#16A75C" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#70CD94" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#069550" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#70CD94"
+                            tools:ignore="TooManyViews" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#16A75C" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#9BDBB3" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#069550" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#16A75C" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#70CD94" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#70CD94" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#16A75C" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#70CD94" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#70CD94" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#70CD94" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#16A75C" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#069550" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#f5f5f5" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#f5f5f5" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#f5f5f5" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#f5f5f5" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#f5f5f5" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#f5f5f5" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#f5f5f5" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#f5f5f5" />
+
+                        <RelativeLayout
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/kotaklaporan"
+                            android:backgroundTint="#f5f5f5" />
+
+                    </androidx.gridlayout.widget.GridLayout>
+
+                    <view
+                        android:id="@+id/view"
+                        class="com.google.android.material.button.MaterialButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="24dp"
+                        android:backgroundTint="#069550"
+                        android:text="@string/b_laporan"
+                        android:textColor="#F5F5F5"
+                        app:cornerRadius="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/grid_maret" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_bawah"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="850dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="20dp"
+                android:columnCount="3"
+                android:rowCount="2"
+                tools:ignore="UselessParent">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        app:drawableTopCompat="@drawable/img_ijin">
+
+                    </TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        app:drawableTopCompat="@drawable/img_kehadiran">
+
+                    </TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        app:drawableTopCompat="@drawable/img_laporan">
+
+                    </TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        app:drawableTopCompat="@drawable/img_agenda">
+
+                    </TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    tools:ignore="TooManyViews">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        app:drawableTopCompat="@drawable/img_booking">
+
+                    </TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        app:drawableTopCompat="@drawable/img_wiki">
+
+                    </TextView>
+                </RelativeLayout>
+            </GridLayout>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
+
+    <!--    /** NIM   : 10119231-->
+    <!--    * Nama   : Muhamad Zulhaqi-->
+    <!--    * Kelas  : IF-6-->
+    <!--    * Tanggal Pengerjaan : 18-04-2022-->
+    <!--    */-->
+
+    <!--    /** NIM   : 10119231-->
+    <!--    * Nama   : Muhamad Zulhaqi-->
+    <!--    * Kelas  : IF-6-->
+    <!--    * Tanggal Pengerjaan : 19-04-2022-->
+    <!--    */-->
